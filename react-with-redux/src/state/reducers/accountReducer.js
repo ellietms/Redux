@@ -1,7 +1,7 @@
 // reducer is a function that retrns state
 // 2 parameters (action , state )
 
-const reducer = (state = 0 , action ) => {
+export const reducer = (state = 0 , action ) => {
     switch(action.type){
         case "deposite":
             return state + action.payload;
@@ -13,4 +13,3 @@ const reducer = (state = 0 , action ) => {
 }
 
 
-export default reducer;
